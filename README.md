@@ -1,6 +1,6 @@
 # AI Algorithms
 
-This repo is a work in progress containing first-principle implementations of groundbreaking AI algorithms using a wide range of deep learning frameworks. Each implementation is accompanied by its supporting research papers. The goal is to provide comprehensive educational resources for understanding and implementing foundational AI algorithms from scratch.
+This repo is a work in progress containing first-principle implementations of groundbreaking AI algorithms using a wide range of deep learning frameworks. Each implementation is accompanied by its supporting research paper(s). The goal is to provide comprehensive educational resources for understanding and implementing foundational AI algorithms from scratch.
 
 ## Implementations
 - [mnist_self_compressing_nns](https://github.com/Jaykef/ai-algorithms/blob/main/mnist_self_compression.ipynb) - Pytorch implementation of ["Self-compressing Neural Networks"](https://arxiv.org/pdf/2301.13142). The paper shows dynamic neural network compression during training - reduced size of weight, activation tensors and bits required to represent weights.
