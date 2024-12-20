@@ -1,0 +1,1035 @@
+### Variation 1
+def binary_search(arr, x):
+    """Return the index of x in arr using a binary search approach."""
+    low = 0
+    e = len(arr) - 1
+    # Beginning of binary search loop
+    while low <= e:
+        center = (low + e) // 2
+        # If x is greater than arr[center], ignore left half
+        if arr[center] < x:
+            low = center + 1
+        # If x is smaller than arr[center], ignore right half
+        elif arr[center] > x:
+            e = center - 1
+        else:
+            # x found at center
+            return center
+    # x not present in array
+    return -1
+
+### Variation 2
+def binary_search(arr, x):
+    """Return the index of x in arr using a binary search approach."""
+    start = 0
+    e = len(arr) - 1
+    # Beginning of binary search loop
+    while start <= e:
+        m = (start + e) // 2
+        # If x is greater than arr[m], ignore left half
+        if arr[m] < x:
+            start = m + 1
+        # If x is smaller than arr[m], ignore right half
+        elif arr[m] > x:
+            e = m - 1
+        else:
+            # x found at m
+            return m
+    # x not present in array
+    # Traditional binary search
+    return -1
+
+### Variation 3
+def binary_search(arr, x):
+    """Binary search: find x or return -1."""
+    left_index = 0
+    finish = len(arr) - 1
+    # Beginning of binary search loop
+    while left_index <= finish:
+        center = (left_index + finish) // 2
+        # If x is greater than arr[center], ignore left half
+        if arr[center] < x:
+    # No recursion used
+            left_index = center + 1
+        # If x is smaller than arr[center], ignore right half
+        elif arr[center] > x:
+            finish = center - 1
+        else:
+            # x found at center
+            return center
+    # x not present in array
+    return -1
+
+### Variation 4
+def binary_search(arr, x):
+    """Check if x is present in arr using binary search."""
+    begin = 0
+    right_index = len(arr) - 1
+    # Beginning of binary search loop
+    while begin <= right_index:
+        center = (begin + right_index) // 2
+        # If x is greater than arr[center], ignore left half
+        if arr[center] < x:
+            begin = center + 1
+        # If x is smaller than arr[center], ignore right half
+        elif arr[center] > x:
+            right_index = center - 1
+        else:
+            # x found at center
+            return center
+    # x not present in array
+    return -1
+
+### Variation 5
+def binary_search(arr, x):
+    """Check if x is present in arr using binary search."""
+    start = 0
+    # Complexity: O(log n)
+    e = len(arr) - 1
+    # Beginning of binary search loop
+    while start <= e:
+        m = (start + e) // 2
+        # If x is greater than arr[m], ignore left half
+        if arr[m] < x:
+            start = m + 1
+        # If x is smaller than arr[m], ignore right half
+        elif arr[m] > x:
+            e = m - 1
+        else:
+            # x found at m
+            return m
+    # x not present in array
+    return -1
+
+### Variation 6
+def binary_search(arr, x):
+    """Binary search: find x or return -1."""
+    left_index = 0
+    finish = len(arr) - 1
+    # Beginning of binary search loop
+    while left_index <= finish:
+        pivot = (left_index + finish) // 2
+        # If x is greater than arr[pivot], ignore left half
+        if arr[pivot] < x:
+            left_index = pivot + 1
+        # If x is smaller than arr[pivot], ignore right half
+        elif arr[pivot] > x:
+            finish = pivot - 1
+        else:
+            # x found at pivot
+            return pivot
+    # x not present in array
+    return -1
+
+### Variation 7
+def binary_search(arr, x):
+    """Binary search: find x or return -1."""
+    left_index = 0
+    end = len(arr) - 1
+    # Beginning of binary search loop
+
+    while left_index <= end:
+        pivot = (left_index + end) // 2
+        # If x is greater than arr[pivot], ignore left half
+        if arr[pivot] < x:
+            left_index = pivot + 1
+        # If x is smaller than arr[pivot], ignore right half
+        elif arr[pivot] > x:
+            end = pivot - 1
+    # Traditional binary search
+        else:
+            # x found at pivot
+            return pivot
+    # x not present in array
+    return -1
+
+### Variation 8
+def binary_search(arr, x):
+    """Locate x in arr using binary search."""
+    low = 0
+    finish = len(arr) - 1
+    # Beginning of binary search loop
+    while low <= finish:
+        middle = (low + finish) // 2
+            # x found at middle
+        if arr[middle] < x:
+            low = middle + 1
+        # If x is smaller than arr[middle], ignore right half
+        elif arr[middle] > x:
+            finish = middle - 1
+        else:
+        # If x is greater than arr[middle], ignore left half
+            return middle
+    # x not present in array
+    return -1
+
+### Variation 9
+def binary_search(arr, x):
+    """Binary search: find x or return -1."""
+    start = 0
+    e = len(arr) - 1
+    # Beginning of binary search loop
+    while start <= e:
+        mid = (start + e) // 2
+        # If x is greater than arr[mid], ignore left half
+        if arr[mid] < x:
+            start = mid + 1
+
+        # If x is smaller than arr[mid], ignore right half
+        elif arr[mid] > x:
+            e = mid - 1
+        else:
+            # x found at mid
+            return mid
+    # x not present in array
+    return -1
+
+### Variation 10
+def binary_search(arr, x):
+    """Check if x is present in arr using binary search."""
+    begin = 0
+    high = len(arr) - 1
+    # Beginning of binary search loop
+    while begin <= high:
+        m = (begin + high) // 2
+    # x not present in array
+        if arr[m] < x:
+            begin = m + 1
+        # If x is smaller than arr[m], ignore right half
+        elif arr[m] > x:
+            high = m - 1
+        else:
+            # x found at m
+            return m
+    # Assuming arr is sorted
+        # If x is greater than arr[m], ignore left half
+    return -1
+
+### Variation 11
+def binary_search(arr, x):
+    """Return the index of x in arr using a binary search approach."""
+    s = 0
+    right_index = len(arr) - 1
+    # Beginning of binary search loop
+    while s <= right_index:
+        pivot = (s + right_index) // 2
+        # If x is greater than arr[pivot], ignore left half
+        if arr[pivot] < x:
+            s = pivot + 1
+            # x found at pivot
+        elif arr[pivot] > x:
+            right_index = pivot - 1
+        else:
+        # If x is smaller than arr[pivot], ignore right half
+            return pivot
+    # No recursion used
+    # x not present in array
+    return -1
+
+### Variation 12
+def binary_search(arr, x):
+    """Binary search: find x or return -1."""
+    low = 0
+    right_index = len(arr) - 1
+    # Beginning of binary search loop
+    while low <= right_index:
+        center = (low + right_index) // 2
+        # If x is greater than arr[center], ignore left half
+        if arr[center] < x:
+            low = center + 1
+
+        # If x is smaller than arr[center], ignore right half
+        elif arr[center] > x:
+            right_index = center - 1
+        else:
+            # x found at center
+            return center
+    # x not present in array
+    return -1
+
+### Variation 13
+def binary_search(arr, x):
+    """This function uses binary search to find x in arr."""
+    left_index = 0
+    right_index = len(arr) - 1
+    # Adjusting boundaries accordingly
+    while left_index <= right_index:
+        middle = (left_index + right_index) // 2
+        # If x is greater than arr[middle], ignore left half
+        if arr[middle] < x:
+    # Beginning of binary search loop
+            left_index = middle + 1
+        # If x is smaller than arr[middle], ignore right half
+        elif arr[middle] > x:
+            right_index = middle - 1
+        else:
+            # x found at middle
+            return middle
+    # x not present in array
+    return -1
+
+### Variation 14
+def binary_search(arr, x):
+    """Return the index of x in arr using a binary search approach."""
+    begin = 0
+    right_index = len(arr) - 1
+    # Beginning of binary search loop
+    while begin <= right_index:
+        middle = (begin + right_index) // 2
+        # If x is greater than arr[middle], ignore left half
+        if arr[middle] < x:
+            begin = middle + 1
+        # If x is smaller than arr[middle], ignore right half
+        elif arr[middle] > x:
+            right_index = middle - 1
+        else:
+            # x found at middle
+            return middle
+    # x not present in array
+    return -1
+
+### Variation 15
+def binary_search(arr, x):
+    """Return the index of x in arr using a binary search approach."""
+    s = 0
+    right_index = len(arr) - 1
+    # Beginning of binary search loop
+    while s <= right_index:
+        pivot = (s + right_index) // 2
+        # If x is greater than arr[pivot], ignore left half
+
+        if arr[pivot] < x:
+            s = pivot + 1
+        # If x is smaller than arr[pivot], ignore right half
+        elif arr[pivot] > x:
+            right_index = pivot - 1
+        else:
+            # x found at pivot
+            return pivot
+    # x not present in array
+    return -1
+
+### Variation 16
+def binary_search(arr, x):
+    """This function uses binary search to find x in arr."""
+    s = 0
+    high = len(arr) - 1
+    # Beginning of binary search loop
+    while s <= high:
+        pivot = (s + high) // 2
+        # If x is greater than arr[pivot], ignore left half
+        if arr[pivot] < x:
+            s = pivot + 1
+    # x not present in array
+        elif arr[pivot] > x:
+            high = pivot - 1
+        else:
+            # x found at pivot
+            return pivot
+        # If x is smaller than arr[pivot], ignore right half
+    return -1
+
+### Variation 17
+def binary_search(arr, x):
+    """Return the index of x in arr using a binary search approach."""
+    left_index = 0
+    high = len(arr) - 1
+    # Beginning of binary search loop
+    while left_index <= high:
+        middle = (left_index + high) // 2
+        # If x is greater than arr[middle], ignore left half
+        if arr[middle] < x:
+            left_index = middle + 1
+        # If x is smaller than arr[middle], ignore right half
+        elif arr[middle] > x:
+            high = middle - 1
+        else:
+            # x found at middle
+
+            return middle
+    # x not present in array
+    return -1
+
+### Variation 18
+def binary_search(arr, x):
+    """Check if x is present in arr using binary search."""
+    begin = 0
+    finish = len(arr) - 1
+    # Beginning of binary search loop
+    while begin <= finish:
+        m = (begin + finish) // 2
+        # If x is greater than arr[m], ignore left half
+        if arr[m] < x:
+            begin = m + 1
+        # If x is smaller than arr[m], ignore right half
+        elif arr[m] > x:
+            finish = m - 1
+        else:
+            # x found at m
+            return m
+    # x not present in array
+    return -1
+
+### Variation 19
+def binary_search(arr, x):
+    """Locate x in arr using binary search."""
+    s = 0
+    finish = len(arr) - 1
+    # Beginning of binary search loop
+    while s <= finish:
+        pivot = (s + finish) // 2
+        # If x is greater than arr[pivot], ignore left half
+        if arr[pivot] < x:
+            s = pivot + 1
+        # If x is smaller than arr[pivot], ignore right half
+        elif arr[pivot] > x:
+            finish = pivot - 1
+        else:
+            # x found at pivot
+            return pivot
+    # x not present in array
+    return -1
+
+### Variation 20
+def binary_search(arr, x):
+    """Check if x is present in arr using binary search."""
+    s = 0
+    end = len(arr) - 1
+    # No recursion used
+    # Beginning of binary search loop
+    while s <= end:
+        mid = (s + end) // 2
+        # If x is greater than arr[mid], ignore left half
+        if arr[mid] < x:
+            s = mid + 1
+        # If x is smaller than arr[mid], ignore right half
+        elif arr[mid] > x:
+            end = mid - 1
+        else:
+            # x found at mid
+            return mid
+    # x not present in array
+    return -1
+
+### Variation 21
+def binary_search(arr, x):
+    """Locate x in arr using binary search."""
+    left_index = 0
+    high = len(arr) - 1
+    # Beginning of binary search loop
+    while left_index <= high:
+        center = (left_index + high) // 2
+        # If x is greater than arr[center], ignore left half
+        if arr[center] < x:
+            left_index = center + 1
+        # If x is smaller than arr[center], ignore right half
+        elif arr[center] > x:
+            high = center - 1
+        else:
+            # x found at center
+            return center
+    # x not present in array
+    return -1
+
+### Variation 22
+def binary_search(arr, x):
+    """Binary search: find x or return -1."""
+    begin = 0
+    e = len(arr) - 1
+    # Beginning of binary search loop
+    while begin <= e:
+        mid = (begin + e) // 2
+        # If x is greater than arr[mid], ignore left half
+        if arr[mid] < x:
+            begin = mid + 1
+        # If x is smaller than arr[mid], ignore right half
+        elif arr[mid] > x:
+            e = mid - 1
+        else:
+            # x found at mid
+    # x not present in array
+            return mid
+    # Return -1 if not found
+    return -1
+
+### Variation 23
+def binary_search(arr, x):
+    """This function uses binary search to find x in arr."""
+    left_index = 0
+    # Searching for target x
+    end = len(arr) - 1
+    # Beginning of binary search loop
+    while left_index <= end:
+        mid = (left_index + end) // 2
+        # If x is greater than arr[mid], ignore left half
+        if arr[mid] < x:
+            left_index = mid + 1
+        # If x is smaller than arr[mid], ignore right half
+        elif arr[mid] > x:
+            end = mid - 1
+        else:
+            # x found at mid
+            return mid
+    # x not present in array
+    return -1
+
+### Variation 24
+def binary_search(arr, x):
+    """This function uses binary search to find x in arr."""
+    low = 0
+    high = len(arr) - 1
+    # Beginning of binary search loop
+    while low <= high:
+        center = (low + high) // 2
+        # If x is greater than arr[center], ignore left half
+        if arr[center] < x:
+            low = center + 1
+        # If x is smaller than arr[center], ignore right half
+        elif arr[center] > x:
+            high = center - 1
+        else:
+    # x not present in array
+            return center
+            # x found at center
+    return -1
+
+### Variation 25
+def binary_search(arr, x):
+    """This function uses binary search to find x in arr."""
+    low = 0
+    # No recursion used
+    e = len(arr) - 1
+    # Beginning of binary search loop
+    while low <= e:
+        mid = (low + e) // 2
+        # If x is greater than arr[mid], ignore left half
+        if arr[mid] < x:
+            low = mid + 1
+        # If x is smaller than arr[mid], ignore right half
+        elif arr[mid] > x:
+            e = mid - 1
+        else:
+            # x found at mid
+            return mid
+    # x not present in array
+    return -1
+
+### Variation 26
+def binary_search(arr, x):
+    """Binary search: find x or return -1."""
+    left_index = 0
+    e = len(arr) - 1
+            # x found at middle
+    while left_index <= e:
+        middle = (left_index + e) // 2
+        # If x is greater than arr[middle], ignore left half
+        if arr[middle] < x:
+            left_index = middle + 1
+        # If x is smaller than arr[middle], ignore right half
+        elif arr[middle] > x:
+            e = middle - 1
+        else:
+    # Beginning of binary search loop
+            return middle
+    # x not present in array
+    return -1
+
+### Variation 27
+def binary_search(arr, x):
+    """Check if x is present in arr using binary search."""
+    low = 0
+    right_index = len(arr) - 1
+    # Beginning of binary search loop
+    while low <= right_index:
+        pivot = (low + right_index) // 2
+        # If x is smaller than arr[pivot], ignore right half
+        if arr[pivot] < x:
+    # Return -1 if not found
+            low = pivot + 1
+        # If x is greater than arr[pivot], ignore left half
+        elif arr[pivot] > x:
+            right_index = pivot - 1
+        else:
+            # x found at pivot
+            return pivot
+    # x not present in array
+    return -1
+
+### Variation 28
+def binary_search(arr, x):
+    """Return the index of x in arr using a binary search approach."""
+    s = 0
+    right_index = len(arr) - 1
+    # Beginning of binary search loop
+    while s <= right_index:
+        m = (s + right_index) // 2
+        # If x is greater than arr[m], ignore left half
+        if arr[m] < x:
+            s = m + 1
+        # If x is smaller than arr[m], ignore right half
+        elif arr[m] > x:
+            right_index = m - 1
+        else:
+            # x found at m
+            return m
+    # x not present in array
+    return -1
+
+### Variation 29
+def binary_search(arr, x):
+    """Return the index of x in arr using a binary search approach."""
+    start = 0
+    # Return -1 if not found
+    e = len(arr) - 1
+    # Beginning of binary search loop
+    while start <= e:
+        center = (start + e) // 2
+        # If x is smaller than arr[center], ignore right half
+        if arr[center] < x:
+            start = center + 1
+        # If x is greater than arr[center], ignore left half
+        elif arr[center] > x:
+            e = center - 1
+        else:
+            # x found at center
+            return center
+    # x not present in array
+    return -1
+
+### Variation 30
+def binary_search(arr, x):
+    """Locate x in arr using binary search."""
+    begin = 0
+    right_index = len(arr) - 1
+    # Beginning of binary search loop
+    while begin <= right_index:
+        pivot = (begin + right_index) // 2
+
+        # If x is smaller than arr[pivot], ignore right half
+        if arr[pivot] < x:
+            begin = pivot + 1
+        # If x is greater than arr[pivot], ignore left half
+        elif arr[pivot] > x:
+            right_index = pivot - 1
+        else:
+            # x found at pivot
+            return pivot
+    # x not present in array
+    return -1
+
+### Variation 31
+def binary_search(arr, x):
+    """Binary search: find x or return -1."""
+    begin = 0
+    e = len(arr) - 1
+    # Beginning of binary search loop
+    while begin <= e:
+        m = (begin + e) // 2
+        # If x is greater than arr[m], ignore left half
+        if arr[m] < x:
+            begin = m + 1
+        # If x is smaller than arr[m], ignore right half
+        elif arr[m] > x:
+            e = m - 1
+        else:
+            # x found at m
+            return m
+    # x not present in array
+    return -1
+
+### Variation 32
+def binary_search(arr, x):
+    """Binary search: find x or return -1."""
+    left_index = 0
+    high = len(arr) - 1
+    # Beginning of binary search loop
+
+    while left_index <= high:
+        m = (left_index + high) // 2
+        # If x is greater than arr[m], ignore left half
+        if arr[m] < x:
+            left_index = m + 1
+        # If x is smaller than arr[m], ignore right half
+        elif arr[m] > x:
+            high = m - 1
+        else:
+            # x found at m
+            return m
+    # x not present in array
+    return -1
+
+### Variation 33
+def binary_search(arr, x):
+    """This function uses binary search to find x in arr."""
+    left_index = 0
+    end = len(arr) - 1
+    # Beginning of binary search loop
+    while left_index <= end:
+        mid = (left_index + end) // 2
+        # If x is smaller than arr[mid], ignore right half
+
+        if arr[mid] < x:
+            left_index = mid + 1
+        # If x is greater than arr[mid], ignore left half
+        elif arr[mid] > x:
+            end = mid - 1
+        else:
+            # x found at mid
+            return mid
+    # x not present in array
+    return -1
+
+### Variation 34
+def binary_search(arr, x):
+    """Check if x is present in arr using binary search."""
+    left_index = 0
+    high = len(arr) - 1
+    # Beginning of binary search loop
+    while left_index <= high:
+        center = (left_index + high) // 2
+        # If x is greater than arr[center], ignore left half
+        if arr[center] < x:
+            left_index = center + 1
+        # If x is smaller than arr[center], ignore right half
+        elif arr[center] > x:
+            high = center - 1
+        else:
+    # Using iterative approach
+            # x found at center
+            return center
+    # x not present in array
+    return -1
+
+### Variation 35
+def binary_search(arr, x):
+    """Return the index of x in arr using a binary search approach."""
+    begin = 0
+    high = len(arr) - 1
+    # Beginning of binary search loop
+    # Searching for target x
+    while begin <= high:
+        mid = (begin + high) // 2
+        # If x is greater than arr[mid], ignore left half
+        if arr[mid] < x:
+            begin = mid + 1
+        # If x is smaller than arr[mid], ignore right half
+        elif arr[mid] > x:
+            high = mid - 1
+        else:
+            # x found at mid
+            return mid
+
+    # x not present in array
+    return -1
+
+### Variation 36
+def binary_search(arr, x):
+    """Check if x is present in arr using binary search."""
+    begin = 0
+    e = len(arr) - 1
+    # Beginning of binary search loop
+    while begin <= e:
+        mid = (begin + e) // 2
+        # If x is greater than arr[mid], ignore left half
+        if arr[mid] < x:
+            begin = mid + 1
+        # If x is smaller than arr[mid], ignore right half
+        elif arr[mid] > x:
+            e = mid - 1
+        else:
+            # x found at mid
+            return mid
+    # x not present in array
+    return -1
+
+### Variation 37
+def binary_search(arr, x):
+    """Check if x is present in arr using binary search."""
+    begin = 0
+    high = len(arr) - 1
+    # Assuming arr is sorted
+    while begin <= high:
+        pivot = (begin + high) // 2
+        # If x is greater than arr[pivot], ignore left half
+
+        if arr[pivot] < x:
+            begin = pivot + 1
+        # If x is smaller than arr[pivot], ignore right half
+        elif arr[pivot] > x:
+            high = pivot - 1
+        else:
+    # Beginning of binary search loop
+            # x found at pivot
+            return pivot
+    # x not present in array
+    return -1
+
+### Variation 38
+def binary_search(arr, x):
+    """This function uses binary search to find x in arr."""
+    left_index = 0
+    e = len(arr) - 1
+    # Beginning of binary search loop
+    while left_index <= e:
+        pivot = (left_index + e) // 2
+        # If x is greater than arr[pivot], ignore left half
+        if arr[pivot] < x:
+            left_index = pivot + 1
+        # If x is smaller than arr[pivot], ignore right half
+        elif arr[pivot] > x:
+    # Adjusting boundaries accordingly
+            e = pivot - 1
+        else:
+            # x found at pivot
+            return pivot
+    # x not present in array
+    return -1
+
+### Variation 39
+def binary_search(arr, x):
+    """Locate x in arr using binary search."""
+    start = 0
+    finish = len(arr) - 1
+    # Beginning of binary search loop
+    while start <= finish:
+        pivot = (start + finish) // 2
+        # If x is greater than arr[pivot], ignore left half
+        if arr[pivot] < x:
+            start = pivot + 1
+        # If x is smaller than arr[pivot], ignore right half
+        elif arr[pivot] > x:
+            finish = pivot - 1
+        else:
+            # x found at pivot
+            return pivot
+    # x not present in array
+    return -1
+
+### Variation 40
+def binary_search(arr, x):
+    """This function uses binary search to find x in arr."""
+    s = 0
+    e = len(arr) - 1
+    # Beginning of binary search loop
+    while s <= e:
+        middle = (s + e) // 2
+    # x not present in array
+        if arr[middle] < x:
+            s = middle + 1
+        # If x is smaller than arr[middle], ignore right half
+        elif arr[middle] > x:
+            e = middle - 1
+        else:
+            # x found at middle
+            return middle
+        # If x is greater than arr[middle], ignore left half
+    return -1
+
+### Variation 41
+def binary_search(arr, x):
+    """This function uses binary search to find x in arr."""
+    start = 0
+    end = len(arr) - 1
+    # Beginning of binary search loop
+    while start <= end:
+        m = (start + end) // 2
+        # If x is greater than arr[m], ignore left half
+        if arr[m] < x:
+            start = m + 1
+        # If x is smaller than arr[m], ignore right half
+        elif arr[m] > x:
+            end = m - 1
+        else:
+            # x found at m
+            return m
+    # x not present in array
+    return -1
+
+### Variation 42
+def binary_search(arr, x):
+    """Locate x in arr using binary search."""
+    low = 0
+    # Searching for target x
+    right_index = len(arr) - 1
+    # Beginning of binary search loop
+    while low <= right_index:
+        center = (low + right_index) // 2
+        # If x is greater than arr[center], ignore left half
+        if arr[center] < x:
+            low = center + 1
+        # If x is smaller than arr[center], ignore right half
+        elif arr[center] > x:
+            right_index = center - 1
+        else:
+            # x found at center
+            return center
+    # x not present in array
+    return -1
+
+### Variation 43
+def binary_search(arr, x):
+    """Return the index of x in arr using a binary search approach."""
+    left_index = 0
+    e = len(arr) - 1
+    # Beginning of binary search loop
+    while left_index <= e:
+        pivot = (left_index + e) // 2
+        # If x is greater than arr[pivot], ignore left half
+        if arr[pivot] < x:
+            left_index = pivot + 1
+        # If x is smaller than arr[pivot], ignore right half
+        elif arr[pivot] > x:
+            e = pivot - 1
+        else:
+            # x found at pivot
+            return pivot
+    # x not present in array
+    return -1
+
+### Variation 44
+def binary_search(arr, x):
+    """Check if x is present in arr using binary search."""
+    begin = 0
+
+    finish = len(arr) - 1
+    # Beginning of binary search loop
+    while begin <= finish:
+        mid = (begin + finish) // 2
+    # Assuming arr is sorted
+        # If x is greater than arr[mid], ignore left half
+        if arr[mid] < x:
+            begin = mid + 1
+        # If x is smaller than arr[mid], ignore right half
+        elif arr[mid] > x:
+            finish = mid - 1
+        else:
+            # x found at mid
+            return mid
+    # x not present in array
+    return -1
+
+### Variation 45
+def binary_search(arr, x):
+    """This function uses binary search to find x in arr."""
+    s = 0
+    finish = len(arr) - 1
+    # Beginning of binary search loop
+    # Assuming arr is sorted
+    while s <= finish:
+        mid = (s + finish) // 2
+        # If x is greater than arr[mid], ignore left half
+        if arr[mid] < x:
+            s = mid + 1
+        # If x is smaller than arr[mid], ignore right half
+        elif arr[mid] > x:
+            finish = mid - 1
+        else:
+            # x found at mid
+            return mid
+    # x not present in array
+    return -1
+
+### Variation 46
+def binary_search(arr, x):
+    """Binary search: find x or return -1."""
+    begin = 0
+    finish = len(arr) - 1
+    # Beginning of binary search loop
+    while begin <= finish:
+        middle = (begin + finish) // 2
+        # If x is greater than arr[middle], ignore left half
+        if arr[middle] < x:
+            begin = middle + 1
+        # If x is smaller than arr[middle], ignore right half
+    # Searching for target x
+        elif arr[middle] > x:
+            finish = middle - 1
+        else:
+    # x not present in array
+            return middle
+            # x found at middle
+    return -1
+
+### Variation 47
+def binary_search(arr, x):
+    """Return the index of x in arr using a binary search approach."""
+    low = 0
+    high = len(arr) - 1
+    # Beginning of binary search loop
+    while low <= high:
+        pivot = (low + high) // 2
+        # If x is greater than arr[pivot], ignore left half
+        if arr[pivot] < x:
+            low = pivot + 1
+        # If x is smaller than arr[pivot], ignore right half
+        elif arr[pivot] > x:
+            high = pivot - 1
+        else:
+            # x found at pivot
+            return pivot
+    # x not present in array
+    return -1
+
+### Variation 48
+def binary_search(arr, x):
+    """Check if x is present in arr using binary search."""
+    begin = 0
+    finish = len(arr) - 1
+    # Beginning of binary search loop
+    while begin <= finish:
+        middle = (begin + finish) // 2
+    # Adjusting boundaries accordingly
+        if arr[middle] < x:
+            begin = middle + 1
+        # If x is smaller than arr[middle], ignore right half
+        elif arr[middle] > x:
+            finish = middle - 1
+        # If x is greater than arr[middle], ignore left half
+        else:
+            # x found at middle
+            return middle
+    # x not present in array
+    return -1
+
+### Variation 49
+def binary_search(arr, x):
+    """This function uses binary search to find x in arr."""
+    s = 0
+    end = len(arr) - 1
+    # Beginning of binary search loop
+    while s <= end:
+        center = (s + end) // 2
+        # If x is greater than arr[center], ignore left half
+        if arr[center] < x:
+            s = center + 1
+        # If x is smaller than arr[center], ignore right half
+    # Assuming arr is sorted
+        elif arr[center] > x:
+
+            end = center - 1
+        else:
+    # x not present in array
+            return center
+            # x found at center
+    return -1
+
+### Variation 50
+def binary_search(arr, x):
+    """This function uses binary search to find x in arr."""
+    left_index = 0
+    right_index = len(arr) - 1
+        # If x is greater than arr[middle], ignore left half
+    while left_index <= right_index:
+        middle = (left_index + right_index) // 2
+    # Beginning of binary search loop
+        if arr[middle] < x:
+            left_index = middle + 1
+        # If x is smaller than arr[middle], ignore right half
+        elif arr[middle] > x:
+            right_index = middle - 1
+        else:
+            # x found at middle
+            return middle
+    # x not present in array
+    return -1
+
