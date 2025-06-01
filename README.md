@@ -1,6 +1,6 @@
 # nanoAI Algorithms
 
-This repo is a work in progress containing first-principle implementations of groundbreaking AI algorithms using a wide range of deep learning frameworks. Each implementation is accompanied by its supporting research paper(s). The goal is to provide comprehensive educational resources for understanding and implementing foundational AI algorithms from scratch.
+This repo is a work in progress containing first-principle nano implementations of groundbreaking AI algorithms using a wide range of deep learning frameworks. Each implementation is accompanied by its supporting research paper(s) and a demo. The goal is to provide comprehensive educational resources for understanding and implementing foundational AI algorithms from scratch, targeting compute constrained (or gpu poor) researchers. All the code here can run on cpu with the least available memory (8GB RAM).
 
 ## Implementations
 - [nanoRF](https://github.com/Jaykef/ai-algorithms/blob/main/nanoRF.ipynb) - Lightweight implementation of a Rectified Flow Transformer model, ~ 618k parameters, 6 layers deep, dim 64, patch size 4, learning rate 5e-4  trained on my 8bg ram m2 macbookair for 2k epochs. [See demo here](https://x.com/Jaykef_/status/1923718725578129838), Reference Paper: https://arxiv.org/abs/2403.03206.
