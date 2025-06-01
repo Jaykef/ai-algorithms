@@ -1,4 +1,4 @@
-# AI Algorithms
+# nanoAI Algorithms
 
 This repo is a work in progress containing first-principle implementations of groundbreaking AI algorithms using a wide range of deep learning frameworks. Each implementation is accompanied by its supporting research paper(s). The goal is to provide comprehensive educational resources for understanding and implementing foundational AI algorithms from scratch.
 
